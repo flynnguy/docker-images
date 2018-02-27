@@ -1,0 +1,5 @@
+default_context:
+    full_name: "Christopher Flynn"
+    email: "flynnguy@gmail.com"
+    github_username: "flynnguy"
+cookiecutters_dir: "/mnt"
