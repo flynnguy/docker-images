@@ -16,7 +16,7 @@ this:
 
 ```bash
 $ docker run --rm -it -v "$(pwd):/mnt" \
-    moogar0880/emojipacks:latest \
+    flynnguy/emojipacks:latest \
     --pack /mnt/apack.yml
 ```
 
@@ -26,7 +26,7 @@ Optionally, you can specify some or all of the information on the commandline:
 
 ```bash
 $ docker run --rm -it -v "$(pwd):/mnt" \
-    moogar0880/emojipacks:latest \
+    flynnguy/emojipacks:latest \
         --subdomain my-team \
         --email my-email@example.com \
         --pack /mnt/apack.yml

@@ -11,7 +11,7 @@ You can build and run a Go binary:
 version: '2'
 services:
   linter:
-    image: moogar0880/gometalinter:latest
+    image: flynnguy/gometalinter:latest
     workdir: /go/src/package/path
     command: debug /package/path
 ```
@@ -22,7 +22,7 @@ You can debug a pre-compiled Go binary:
 version: '2'
 services:
   linter:
-    image: moogar0880/gometalinter:latest
+    image: flynnguy/gometalinter:latest
     workdir: /go/src/package/path
     command: exec /path/to/my/binary
 ```
@@ -33,7 +33,7 @@ You can attach to a running Go binary:
 version: '2'
 services:
   linter:
-    image: moogar0880/gometalinter:latest
+    image: flynnguy/gometalinter:latest
     workdir: /go/src/package/path
     command: attach 1
 ```

@@ -16,7 +16,7 @@ this:
 
 ```bash
 $ docker run --rm -it -v "$(pwd):/mnt" \
-    moogar0880/cookiecutter:latest \
+    flynnguy/cookiecutter:latest \
     https://github.com/audreyr/cookiecutter-pypackage.git
 ```
 
@@ -24,7 +24,7 @@ But you might find it easier in the long run to do something like the following:
 
 ```bash
 # alias cookiecutter to the root of the "docker run" command
-alias cookiecutter='docker run --rm -it -v "$(pwd):/mnt" moogar0880/cookiecutter:latest'
+alias cookiecutter='docker run --rm -it -v "$(pwd):/mnt" flynnguy/cookiecutter:latest'
 
 # now subsequent calls with the `cookiecutter` command will run in the docker container
 cookiecutter https://github.com/audreyr/cookiecutter-pypackage.git

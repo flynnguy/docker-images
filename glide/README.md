@@ -13,7 +13,7 @@ docker cli and docker-compose.
 $ docker run --rm -it \
     -v "$(pwd):/go/src/package/path" \
     -w "/go/src/package/path" \
-    moogar0880/glide:latest
+    flynnguy/glide:latest
 ```
 
 #### docker-compose
@@ -21,7 +21,7 @@ $ docker run --rm -it \
 version: '2'
 services:
   glide:
-    image: moogar0880/glide:latest
+    image: flynnguy/glide:latest
     volumes:
       - ./:/go/src/package/path
 ```
@@ -32,7 +32,7 @@ services:
 $ docker run --rm -it \
     -v "$(pwd):/go/src/package/path" \
     -w "/go/src/package/path" \
-    moogar0880/glide:latest \
+    flynnguy/glide:latest \
     glide update
 ```
 
@@ -41,7 +41,7 @@ $ docker run --rm -it \
 version: '2'
 services:
   glide:
-    image: moogar0880/glide:latest
+    image: flynnguy/glide:latest
     volumes:
       - ./:/go/src/package/path
     command: glide update
@@ -57,7 +57,7 @@ the `goimports` package.
 $ docker run --rm -it \
     -v "$(pwd):/go/src/package/path" \
     -w "/go/src/package/path" \
-    moogar0880/glide:latest \
+    flynnguy/glide:latest \
     glide get golang.org/x/tools/cmd/goimports
 ```
 
@@ -66,7 +66,7 @@ $ docker run --rm -it \
 version: '2'
 services:
   glide:
-    image: moogar0880/glide:latest
+    image: flynnguy/glide:latest
     volumes:
       - ./:/go/src/package/path
     command: glide get golang.org/x/tools/cmd/goimports

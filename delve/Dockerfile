@@ -1,6 +1,4 @@
-FROM moogar0880/glide:latest
-
-LABEL maintainer "moogar0880@gmail.com"
+FROM flynnguy/glide:latest
 
 RUN go get -u github.com/derekparker/delve/cmd/dlv
 

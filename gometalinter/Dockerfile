@@ -1,7 +1,5 @@
 FROM golang:1.8-alpine
 
-LABEL maintainer "moogar0880@gmail.com"
-
 RUN apk --update upgrade && \
     apk add make git && \
     rm -rf /var/cache/apk/*

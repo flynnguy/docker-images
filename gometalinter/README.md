@@ -17,7 +17,7 @@ To run only a quick ("fast") sub-set of linters
 version: '2'
 services:
   linter:
-    image: moogar0880/gometalinter:latest
+    image: flynnguy/gometalinter:latest
     workdir: /go/src/package/path
     command: gometalinter --fast ./...
 ```
@@ -30,7 +30,7 @@ default
 version: '2'
 services:
   linter:
-    image: moogar0880/gometalinter:latest
+    image: flynnguy/gometalinter:latest
     workdir: /go/src/package/path
     command: >
       gometalinter
