@@ -1,4 +1,4 @@
-DOCKER_REPO=moogar0880
+DOCKER_REPO=flynnguy
 VERSION=$(shell git describe --tags 2> /dev/null || echo 'latest')
 IMAGES=cookiecutter glide gometalinter
 
